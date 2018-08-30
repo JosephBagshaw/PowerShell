@@ -1,0 +1,44 @@
+<Window 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
+        Title="MainWindow" Height="559.333" Width="1250.85" Background="#FFF2F2F2" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+    <Grid>
+        <GroupBox Header="Computer Name:" Height="80" Margin="0,10,0,0" VerticalAlignment="Top" FontWeight="Bold" />
+        <Label Content="Up Time:" HorizontalAlignment="Left" Margin="344,40,0,0" VerticalAlignment="Top" Height="27" Width="57"/>
+        <TextBox Name="uptime" HorizontalAlignment="Left" Height="64" Margin="418,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="273" Background="#FFF2F2F2" BorderBrush="#FFF2F2F2" SelectionBrush="#FFF2F2F2" BorderThickness="0" FontFamily="Courier New"/>
+        <TextBox Name="computername" HorizontalAlignment="Left" Height="37" Margin="22,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="216" Background="#C6E2FF" FontSize="22" TextAlignment="Center" CharacterCasing="Upper"/>
+        <Button Name="connect" Content="Connect" HorizontalAlignment="Left" Margin="252,34,0,0" VerticalAlignment="Top" Width="75" Height="37"/>
+        <TabControl Margin="0,95,0,-0.4">
+            <TabItem Header="Computer &amp; Operating System">
+                <Grid Background="#FFE5E5E5">
+                    <GroupBox Header="Performance Monitor" HorizontalAlignment="Left" Height="100" Margin="878,10,0,0" VerticalAlignment="Top" Width="264" FontWeight="Bold"/>
+                    <TextBox Name="seconds" HorizontalAlignment="Left" Height="20" Margin="942,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" FontSize="12" TextAlignment="Center" CharacterCasing="Upper"/>
+                    <Label Content="Seconds:" HorizontalAlignment="Left" Margin="887,40,0,0" VerticalAlignment="Top" Width="60" Height="28"/>
+                    <Button Name="run" Content="Run" HorizontalAlignment="Left" Margin="1051,43,0,0" VerticalAlignment="Top" Width="77"/>
+
+                    <GroupBox Header="Disks &amp; Drives" HorizontalAlignment="Left" Height="100" Margin="588,10,0,0" VerticalAlignment="Top" Width="264" FontWeight="Bold"/>
+                    <Button Name="logicaldisk" Content="Logical Disk" HorizontalAlignment="Left" Margin="602,43,0,0" VerticalAlignment="Top" Width="75"/>
+                    <Button Name="physicaldisk" Content="Physical Disk" HorizontalAlignment="Left" Margin="682,43,0,0" VerticalAlignment="Top" Width="75"/>
+
+                    <GroupBox Header="Software" HorizontalAlignment="Left" Height="100" Margin="298,10,0,0" VerticalAlignment="Top" Width="264" FontWeight="Bold"/>
+                    <Button Name="operatingsystem" Content="OS" HorizontalAlignment="Left" Margin="314,43,0,0" VerticalAlignment="Top" Width="75"/>
+                    <Button Name="applications" Content="Applications" HorizontalAlignment="Left" Margin="394,43,0,0" VerticalAlignment="Top" Width="75"/>
+                    <Button Name="startup" Content="Startup" HorizontalAlignment="Left" Margin="474,43,0,0" VerticalAlignment="Top" Width="75"/>
+
+                    <GroupBox Name="hardwaregroup" Header="Hardware" HorizontalAlignment="Left" Height="100" Margin="10,10,0,0" VerticalAlignment="Top" Width="264" FontWeight="Bold"/>
+                    <Button Name="system" Content="System Type" HorizontalAlignment="Left" Margin="24,43,0,0" VerticalAlignment="Top" Width="75"/>
+                    <Button Name="bios" Content="BIOS" HorizontalAlignment="Left" Margin="104,43,0,0" VerticalAlignment="Top" Width="75"/>
+                    <Button Name="memory" Content="Memory" HorizontalAlignment="Left" Margin="184,43,0,0" VerticalAlignment="Top" Width="75"/>
+                    <Button Name="processor" Content="Processor" HorizontalAlignment="Left" Margin="24,67,0,0" VerticalAlignment="Top" Width="75"/>
+                    <Button Name="printers" Content="Printers" HorizontalAlignment="Left" Margin="104,67,0,0" VerticalAlignment="Top" Width="75"/>
+
+                    <TextBox Name="output" Margin="0,115,-0.4,0" FontFamily="Courier New"/>
+
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+
+    </Grid>
+</Window>
